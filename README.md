@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+# Ghibli Movies Explorer
+Aplicação desenvolvida com React + Vite que consome a Ghibli API para listar filmes do Studio Ghibli em um layout responsivo e exibir os detalhes de cada obra ao clicar nos cards.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tecnologias
+* React
 
-Currently, two official plugins are available:
+* TypeScript
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Vite
 
-## React Compiler
+* Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React Router DOM
 
-## Expanding the ESLint configuration
+* Ghibli API
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
+* Listagem dos filmes do Studio Ghibli.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Ordenação alfabética dos títulos.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* Exibição de apenas 10 filmes na página inicial.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* Layout em grid responsivo.
+
+* Página de detalhes do filme ao clicar em um card.
+
+## 📦 Como rodar o projeto
+bash
+### Clonar o repositório
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+git clone https://github.com/seu-usuario/Ghibli-Movies-Explorer.git
 ```
+### Entrar na pasta
+```
+cd Ghibli-Movies-Explorer
+```
+### Instalar dependências
+```
+npm install
+```
+### Rodar em ambiente de desenvolvimento
+```
+npm run dev
+```
+Depois, acesse o endereço mostrado no terminal (geralmente http://localhost:5173/).
+
+## 🔗 API
+Os dados são obtidos da Ghibli API:
+https://ghibliapi.vercel.app/films
