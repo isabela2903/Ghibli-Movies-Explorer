@@ -1,6 +1,10 @@
 # Ghibli Movies Explorer
 Aplicação desenvolvida com React + Vite que consome a Ghibli API para listar filmes do Studio Ghibli em um layout responsivo e exibir os detalhes de cada obra ao clicar nos cards.
 
+## Demo
+Acesse o projeto online:
+[https://ghibli-movies-explorer.vercel.app/]
+
 ## 🚀 Tecnologias
 * React
 
